@@ -1,0 +1,68 @@
+html {
+  background: url(https://i.postimg.cc/PfQtGp0R/home-img.jpg) no-repeat center
+    fixed;
+  background-size: cover;
+}
+body {
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.wrapper {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 0 auto;
+  width: 500px;
+  height: 550px;
+}
+.game {
+  margin-top: 50px;
+  display: block;
+  margin-top: 150px;
+  line-height: 100px;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+}
+.game h1 {
+  font-size: 28px;
+}
+#startButton {
+  display: block;
+  margin-top: 180px;
+  line-height: 150px;
+}
+.btn1 {
+  background-color: transparent;
+  border: 3px solid #2695ff;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn1:hover {
+  color: #2695ff;
+  animation: pulse 1s infinite;
+  transition: 0.3s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
